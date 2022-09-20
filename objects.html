@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Object In JS</title>
+        <script>
+           /* function add()
+            {
+                var v1 = prompt("X= ")
+                var v2 = prompt("Y= ")
+                var z = Number(v1)+Number(v2)
+                alert(z)
+            }*/
+
+            function add()
+            {
+                var  v1 = document.getElementById("v1").value
+                var  v2 = document.getElementById("v2").value
+                var z = Number(v1)+Number(v2)
+                document.getElementById("result").innerHTML = z
+
+            }
+
+        </script>
+    </head>
+    <body>
+       X = <input type="text" id="v1"> <br>
+       Y= <input type="text" id="v2">
+       <p id="result">Output</p>
+        <script>
+
+          //  window.alert("hello")
+           // var x = window.prompt("Type Your Name")
+           // alert(x)
+        </script>
+
+       <!--<input type="button" value="OK"></br> --> 
+        <button onclick="add()">OK</button>
+
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html> >
+<html>
+
+<head>
+    <script>
+        function save() {
+            if (localStorage) {
+                var v1 = document.getElementById("local").value
+                var v2 = document.getElementById("session").value
+                localStorage.setItem("v1", x1)
+                sessionStorage.setItem("v2", x2)
+            } else {
+                alert("local storage not supported")
+            }
+
+            function read() {
+                var x1 = localStorage.getItem("x1")
+                var x2 = sessionStorage.getItem("x2")
+                alert(x1)
+                alert(x2)
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="local" />
+    <br>
+    <input type="text" id="session" />
+    <input type="button" id </body>
+
+</html>

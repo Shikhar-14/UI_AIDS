@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script>
+        var c = 0
+
+        function count() {
+            localStorage.setItem("countValue", c)
+            c = localStorage.getItem("countValue")
+            document.getElementById("p1").innerHTML = ++c
+        }
+    </script>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <button onclick="count()">Count</button>
+</body>
+
+</html>

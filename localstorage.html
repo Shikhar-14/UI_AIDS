@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script>
+        function save() {
+            var v1 = document.getElementById("name").value
+            var v2 = document.getElementById("branch").value
+            var v3 = document.getElementById("roll_no").value
+            localStorage.setItem("name", v1)
+            localStorage.setItem("branch", v1)
+            localStorage.setItem("roll_no", v1)
+        }
+
+        function read() {
+            var x1 = localStorage.getItem("name")
+            document.getElementById("u1").innerHTML = x1
+            var x1 = localStorage.getItem("branch")
+            document.getElementById("u2").innerHTML = x2
+            var x1 = localStorage.getItem("roll_no")
+            document.getElementById("u3").innerHTML = x3
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
